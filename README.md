@@ -1,9 +1,14 @@
-# klg-koa-demo
+# pandora-koa-mongoose-demo
 
 
 ## QuickStart
 
-<!-- add docs here for user -->
+### run
+
+```bash
+$ npm i
+$ npm run dev
+```
 
 ### Test
 
