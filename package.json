@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@types/mongoose": "^5.0.9",
+    "cls-hooked": "^4.2.2",
     "koa": "^2.5.0",
     "mongoose": "^5.0.14",
     "pandora": "^1.8.17",

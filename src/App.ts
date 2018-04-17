@@ -18,10 +18,10 @@ async function d1 () {
 
 async function d2 () {
   logger.log(3)
-  const user = await User.findOne()
+  const user = await User.findOne({}).then()
   logger.log('hello')
   logger.log('user:', user)
   return user
 }
 
-app.listen(3011)
+app.listen(3013)
