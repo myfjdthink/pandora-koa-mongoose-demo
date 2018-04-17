@@ -1,10 +1,12 @@
 var createNamespace = require('cls-hooked').createNamespace;
 var session = createNamespace('my session');
+var util = require('util');
 
 async function main () {
   const fake = new Fake()
-  const result = await fake.query(233)    // end 方法内将拿不到 session user
-  // const result = await fake.query(233).then()  // end 方法内可以拿到 session user
+  // const result = await fake.query(233)    // not work, function end  ession.get('user') is undefined
+  const result = await util.promisify(fake.query)(233) // work
+  // const result = await fake.query(233).then()  // work
   console.log('result ', result)
 }
 
